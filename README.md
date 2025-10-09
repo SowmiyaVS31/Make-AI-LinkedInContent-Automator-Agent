@@ -40,17 +40,7 @@ This project demonstrates how to build a **no-code AI Agent** using [Make.com](h
 
 * Add an **OpenAI Assistant module** → `Create a Message`.
 * Connect your **OpenAI API key** from `https://platform.openai.com/api-keys`.
-* Use the prompt:
-
-  ```json
-  Find and analyze the most important AI tool or product launched in the last 4-5 days.
-  Respond only in valid JSON format like:
-  {
-    "title": "",
-    "summary": "",
-    "url": ""
-  }
-  ```
+* Configure the assistant to fetch and analyze the latest AI news in JSON format.
 
 ### Step 3: Parse JSON Output
 
@@ -62,52 +52,25 @@ This project demonstrates how to build a **no-code AI Agent** using [Make.com](h
 * Add **Gemini → Create Completion** module.
 * Connect your **Gemini API key** from `https://ai.google.dev`.
 * Select **Gemini 2.5 Flash model**.
-* Use this prompt structure:
-
-  ```text
-  Act like a top-tier content strategist.
-  Today's AI News:
-  Title: {{title}}
-  Summary: {{summary}}
-  URL: {{url}}
-
-  Write a 150-word Instagram reel script in the style of a tech influencer.
-  Then, write a LinkedIn caption starting with a bold one-liner and ending with a question.
-  Return output in HTML format for email with headings: Reel Script, LinkedIn Post, and Source Link.
-  ```
+* Configure a prompt to generate an Instagram reel script and LinkedIn post based on the AI news data.
 
 ### Step 5: Extract Key Word for Image Generation
 
 * Add another **Gemini → Create Completion** module.
-* Use prompt:
-
-  ```text
-  Based on the following AI news, return one word representing the main topic:
-  {{summary}}
-  ```
+* Configure it to extract a key word from the news summary for image generation.
 
 ### Step 6: Generate Image
 
 * Add **Gemini → Create Image** module.
 * Use **Image Gen 3.0 model** with a 1:1 aspect ratio.
-* Prompt example:
-
-  ```text
-  A Lego-style image of a person with a laptop. The keyword '{{word}}' appears on their T-shirt and screen.
-  ```
+* Create a prompt that incorporates the extracted keyword into a relevant image.
 
 ### Step 7: Send Email with Gmail
 
 * Add **Gmail → Send Email** module.
 * Connect your Gmail account.
-* **Subject:** `Today's Top AI News - {{title}}`
-* **Body:**
-
-  ```html
-  <h2>Today's AI Content</h2>
-  {{Gemini HTML output}}
-  <img src="cid:ai_image" alt="AI News Image" />
-  ```
+* Configure the email subject with the news title.
+* Set up the email body with HTML formatting to include the generated content and image.
 * Attach the image from the image generation module.
 
 ### Step 8: Create an AI Agent
