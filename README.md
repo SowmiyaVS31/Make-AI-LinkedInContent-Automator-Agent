@@ -5,11 +5,11 @@ An automated workflow built on [Make.com](https://www.make.com/) that searches f
 ## 🎯 What This Does
 
 This workflow automatically:
-- 🔍 Searches for the most important AI news from the past 4-5 days
-- 📊 Parses news data (title, summary, URL)
-- 🎬 Generates an Instagram reel script (150 words)
-- 💼 Creates a LinkedIn post with proper formatting
-- 📧 Emails everything to you in a clean HTML format
+-  Searches for the most important AI news from the past 4-5 days
+-  Parses news data (title, summary, URL)
+-  Generates an Instagram reel script (150 words)
+-  Creates a LinkedIn post with proper formatting
+-  Emails everything to you in a clean HTML format
 
 ## 📋 Prerequisites
 
@@ -48,11 +48,11 @@ The detailed setup instructions are provided in the **Make.com_Agents_DailyConte
 
 ## 💡 Customization Ideas
 
-- 🎨 Add image generation (DALL-E module)
-- 🐦 Include Twitter/X post generation
-- 📊 Save content to Google Sheets
-- 💬 Add Slack notifications
-- 🔍 Filter news by specific topics (add keywords to prompt)
+-  Add image generation (DALL-E module)
+-  Include Twitter/X post generation
+-  Save content to Google Sheets
+-  Add Slack notifications
+-  Filter news by specific topics (add keywords to prompt)
 
 ## 📚 Tutorial Reference
 
