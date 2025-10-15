@@ -20,7 +20,7 @@ Before you start, make sure you have:
 
 ## 📧 Sample Output Email
 
-![FinalEmail Output](FinalEmail%20Output.png)
+![FinalEmail Output](FinalEMailOutput.png)
 
 *Example of the daily email with AI news summary, LinkedIn post, and Instagram script*
 
@@ -56,7 +56,7 @@ The detailed setup instructions are provided in the **Make.com_Agents_DailyConte
 
 ## 📚 Tutorial Reference
 
-Based on: **Ishan Sharma - Build Your First AI Agent in 15 Minutes**
+Based on: **[Ishan Sharma - Build Your First AI Agent in 15 Minutes](https://www.youtube.com/watch?v=lIDIEKkRrGI&t=610s)**
 
 **License**: Free to use and modify for personal projects.
 
