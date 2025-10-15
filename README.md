@@ -14,9 +14,9 @@ This workflow automatically:
 ## 📋 Prerequisites
 
 Before you start, make sure you have:
-- ✅ Make.com account (free tier works)
-- ✅ OpenAI API key ($5 minimum charge to use OpenAI Assistant)
-- ✅ Gmail account connected to Make.com
+-  Make.com account (free tier works)
+-  OpenAI API key ($5 minimum charge to use OpenAI Assistant)
+-  Gmail account connected to Make.com
 
 ## 📧 Sample Output Email
 
